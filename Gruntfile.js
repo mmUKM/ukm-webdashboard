@@ -87,7 +87,7 @@ module.exports = function(grunt) {
         options: {
           position: 'top',
           banner: '/*\n'+
-                  'Theme Name: UKM Webdashboard\n'+
+                  'Theme Name: UKM WebDashboard\n'+
                   'Theme URI: https://github.com/mmUKM/ukm-webdashboard\n'+
                   'Version: <%= pkg.version %>\n'+
                   'Description: <%= pkg.description %>\n'+
