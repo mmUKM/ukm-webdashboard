@@ -11,37 +11,37 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'bower_components/jquery/dist',
           src: '*',
-          dest: 'lib/jquery'
+          dest: 'vendor/jquery'
         },
         {
           expand: true,
           cwd: 'bower_components/CMB2',
           src: '**',
-          dest: 'lib/cmb2'
+          dest: 'vendor/cmb2'
         },
         {
           expand: true,
           cwd: 'bower_components/fitvids',
           src: 'jquery.fitvids.js',
-          dest: 'lib/fitvids'
+          dest: 'vendor/fitvids'
         },
         {
           expand: true,
           cwd: 'bower_components/jqnewsTicker/js',
           src: 'newsTicker.js',
-          dest: 'lib/jqnewsticker'
+          dest: 'vendor/jqnewsticker'
         },
         {
           expand: true,
           cwd: 'bower_components/TGM-Plugin-Activation',
           src: 'class-tgm-plugin-activation.php',
-          dest: 'lib/tgmpa'
+          dest: 'vendor/tgmpa'
         },
         {
           expand: true,
           cwd: 'bower_components/uikit',
           src: '**',
-          dest: 'lib/uikit'
+          dest: 'vendor/uikit'
         }]
       }
     },
@@ -71,11 +71,11 @@ module.exports = function(grunt) {
         sourceMap: false
       },
       site: {
-        src: 'js/src/scripts.js',
+        src: 'js/scripts.js',
         dest: 'js/scripts.min.js'
       },
       admin: {
-        src: 'js/src/admin.js',
+        src: 'js/admin.js',
         dest: 'js/admin.min.js'
       }
     },
@@ -133,7 +133,7 @@ module.exports = function(grunt) {
           }
       },
       js: {
-        files: ['js/src/*.js'],
+        files: ['js/*.js'],
         tasks: ['uglify'],
           options: {
             spawn: false
@@ -145,45 +145,43 @@ module.exports = function(grunt) {
 
     clean: {
       js:     [
-              'js/*.js',
-              '!js/*.min.js',
-              'lib/jquery/*.js',
-              'lib/jquery/*.map',
-              '!lib/jquery/jquery.min.js',
-              '!lib/jquery/jquery.min.map'
+              'vendor/jquery/*.js',
+              'vendor/jquery/*.map',
+              '!vendor/jquery/jquery.min.js',
+              '!vendor/jquery/jquery.min.map'
               ],
       cmb2:   [
-              'lib/cmb2/tests',
-              'lib/cmb2/css/*.css',
-              'lib/cmb2/css/*.map',
-              '!lib/cmb2/css/*.min.css',
-              'lib/cmb2/css/sass',
-              'lib/cmb2/languages/*.po',
-              'lib/cmb2/languages/*.mo',
-              '!lib/cmb2/languages/*.pot',
-              '!lib/cmb2/languages/cmb2-en_GB.mo',
-              '!lib/cmb2/languages/cmb2-en_GB.po',
-              '!lib/cmb2/languages/cmb2-ms_MY.mo',
-              '!lib/cmb2/languages/cmb2-ms_MY.po',
-              '!lib/cmb2/*.php',
-              'lib/cmb2/coverage.clover',
-              'lib/cmb2/*.md',
-              'lib/cmb2/*.txt',
-              'lib/cmb2/phpunit.xml.dist'
+              'vendor/cmb2/tests',
+              'vendor/cmb2/css/*.css',
+              'vendor/cmb2/css/*.map',
+              '!vendor/cmb2/css/*.min.css',
+              'vendor/cmb2/css/sass',
+              'vendor/cmb2/languages/*.po',
+              'vendor/cmb2/languages/*.mo',
+              '!vendor/cmb2/languages/*.pot',
+              '!vendor/cmb2/languages/cmb2-en_GB.mo',
+              '!vendor/cmb2/languages/cmb2-en_GB.po',
+              '!vendor/cmb2/languages/cmb2-ms_MY.mo',
+              '!vendor/cmb2/languages/cmb2-ms_MY.po',
+              '!vendor/cmb2/*.php',
+              'vendor/cmb2/coverage.clover',
+              'vendor/cmb2/*.md',
+              'vendor/cmb2/*.txt',
+              'vendor/cmb2/phpunit.xml.dist'
               
               ],
       uikit:  [
-              'lib/uikit/less',
-              'lib/uikit/scss',
-              'lib/uikit/js/core',
-              'lib/uikit/js/*.js',
-              '!lib/uikit/js/*.min.js',
-              'lib/uikit/js/components/*.js',
-              '!lib/uikit/js/components/*.min.js',
-              'lib/uikit/css/*.css',
-              '!lib/uikit/css/*.almost-flat.min.css',
-              'lib/uikit/css/components/*.css',
-              '!lib/uikit/css/components/*.almost-flat.min.css'
+              'vendor/uikit/less',
+              'vendor/uikit/scss',
+              'vendor/uikit/js/core',
+              'vendor/uikit/js/*.js',
+              '!vendor/uikit/js/*.min.js',
+              'vendor/uikit/js/components/*.js',
+              '!vendor/uikit/js/components/*.min.js',
+              'vendor/uikit/css/*.css',
+              '!vendor/uikit/css/*.almost-flat.min.css',
+              'vendor/uikit/css/components/*.css',
+              '!vendor/uikit/css/components/*.almost-flat.min.css'
               ]
     }
     
