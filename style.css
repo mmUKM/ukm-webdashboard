@@ -1,27 +1,10 @@
 /*
 Theme Name: UKM WebDashboard
 Theme URI: https://github.com/mmUKM/ukm-webdashboard
-Version: 2017.0.0
+Version: 1.0.1
 Description: WordPress Theme for Official Site of Universiti Kebangsaan Malaysia
 Author: Jamaludin Rajalu
 Author URI: https://www.facebook.com/jrajalu
 License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-.dhemy-ajax-search {
-  position: absolute;
-  background: #f7f5e7;
-  width: 500px;
-  z-index: 999;
-  right: 0;
-  top: 29px;
-  border: 1px solid #D8D5BF;
-  border-top: none;
-  padding: 0;
-  display: none;
-}
-
-.dhemy-ajax-search li {
-  border-bottom: 1px solid #D8D5BF;
-  padding: 5px 10px;
-}

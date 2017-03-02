@@ -8,4 +8,6 @@
   <?php wp_head(); ?>
 </head>
 <body>
-<?php get_search_form(); ?>
+<header>
+  <h1><?php echo get_bloginfo( 'name' ); ?></h1>
+</header>

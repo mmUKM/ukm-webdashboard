@@ -2,29 +2,29 @@
 
 function wdash_page_taxonomy() {
 
-  // Tags
+  // Categories
   
 	$labels = array(
-		'name'                       => _x( 'Tags', 'Taxonomy General Name', 'wdash' ),
-		'singular_name'              => _x( 'Tag', 'Taxonomy Singular Name', 'wdash' ),
-		'menu_name'                  => __( 'Tag', 'wdash' ),
-		'all_items'                  => __( 'All Tags', 'wdash' ),
-		'parent_item'                => __( 'Parent Tag', 'wdash' ),
-		'parent_item_colon'          => __( 'Parent Tag:', 'wdash' ),
-		'new_item_name'              => __( 'New Tag Name', 'wdash' ),
-		'add_new_item'               => __( 'Add New Tag', 'wdash' ),
-		'edit_item'                  => __( 'Edit Tag', 'wdash' ),
-		'update_item'                => __( 'Update Tag', 'wdash' ),
-		'view_item'                  => __( 'View Tag', 'wdash' ),
-		'separate_items_with_commas' => __( 'Separate tags with commas', 'wdash' ),
-		'add_or_remove_items'        => __( 'Add or remove tags', 'wdash' ),
+		'name'                       => _x( 'Categories', 'Taxonomy General Name', 'wdash' ),
+		'singular_name'              => _x( 'Category', 'Taxonomy Singular Name', 'wdash' ),
+		'menu_name'                  => __( 'Category', 'wdash' ),
+		'all_items'                  => __( 'All Categories', 'wdash' ),
+		'parent_item'                => __( 'Parent Category', 'wdash' ),
+		'parent_item_colon'          => __( 'Parent Category:', 'wdash' ),
+		'new_item_name'              => __( 'New Category Name', 'wdash' ),
+		'add_new_item'               => __( 'Add New Category', 'wdash' ),
+		'edit_item'                  => __( 'Edit Category', 'wdash' ),
+		'update_item'                => __( 'Update Category', 'wdash' ),
+		'view_item'                  => __( 'View Category', 'wdash' ),
+		'separate_items_with_commas' => __( 'Separate Categories with commas', 'wdash' ),
+		'add_or_remove_items'        => __( 'Add or remove Categories', 'wdash' ),
 		'choose_from_most_used'      => __( 'Choose from the most used', 'wdash' ),
-		'popular_items'              => __( 'Popular Tags', 'wdash' ),
-		'search_items'               => __( 'Search Tags', 'wdash' ),
+		'popular_items'              => __( 'Popular Categories', 'wdash' ),
+		'search_items'               => __( 'Search Categories', 'wdash' ),
 		'not_found'                  => __( 'Not Found', 'wdash' ),
-		'no_terms'                   => __( 'No itags', 'wdash' ),
-		'items_list'                 => __( 'Tags list', 'wdash' ),
-		'items_list_navigation'      => __( 'Tags list navigation', 'wdash' ),
+		'no_terms'                   => __( 'No Categories', 'wdash' ),
+		'items_list'                 => __( 'Categories list', 'wdash' ),
+		'items_list_navigation'      => __( 'Categories list navigation', 'wdash' ),
 	);
 	$args = array(
 		'labels'                     => $labels,
@@ -35,7 +35,7 @@ function wdash_page_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'wdash_page_tag', array( 'page' ), $args );
+	register_taxonomy( 'wdash_page_category', array( 'page' ), $args );
 
   // PTj
 
@@ -59,7 +59,7 @@ function wdash_page_taxonomy() {
 		'not_found'                  => __( 'Not Found', 'wdash' ),
 		'no_terms'                   => __( 'No PTjs', 'wdash' ),
 		'items_list'                 => __( 'PTjs list', 'wdash' ),
-		'items_list_navigation'      => __( 'Tags PTj navigation', 'wdash' ),
+		'items_list_navigation'      => __( 'Categories PTj navigation', 'wdash' ),
 	);
 	$args = array(
 		'labels'                     => $labels,
