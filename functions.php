@@ -4,7 +4,7 @@
  */
 require( get_template_directory() . '/inc/theme-update-checker.php' );
   new ThemeUpdateChecker(
-    'ukm-malaycivilization-master',
+    'ukm-webdashboard-master',
     'https://raw.githubusercontent.com/mmUKM/ukm-webdashboard/master/package.json'
 );
 /**

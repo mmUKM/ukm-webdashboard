@@ -8,6 +8,7 @@
   <?php wp_head(); ?>
 </head>
 <body>
+<div class="wrapper">
 <header>
-  <h1><?php echo get_bloginfo( 'name' ); ?></h1>
+  <a href="<?php echo bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
 </header>
